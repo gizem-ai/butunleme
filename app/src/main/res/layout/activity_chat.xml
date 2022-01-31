@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#201E1E"
+    tools:context=".ChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chat_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#201E1E"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chat_activity_imgHedefProfil"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="3dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/chat_activity_txtHedefIsim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/chat_activity_imgHedefProfil"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/chat_activity_imgHedefProfil"
+                android:textColor="#D7D2D2"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chat_activity_imgKapat"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:onClick="btnChatKapat"
+                android:src="@drawable/ic_close"
+                app:tint="#D7D2D2"
+                tools:ignore="OnClick,SpeakableTextPresentCheck,TouchTargetSizeCheck"></ImageView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_activity_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_activity_relaBottom"
+        android:layout_below="@id/chat_activity_toolbar"
+        android:scrollbars="none"></androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/chat_activity_relaBottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/chat_activity_editMesaj"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:hint="bir mesaj yazın"
+            android:textColor="#D7D2D2"
+            tools:ignore="TouchTargetSizeCheck">
+
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/chat_activity_imgMesajGonder"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#201E1E"
+            android:onClick="btnMesajGonder"
+            android:src="@drawable/ic_send"
+            tools:ignore="OnClick,SpeakableTextPresentCheck,TouchTargetSizeCheck"></ImageButton>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/toolbar"
+    android:background="#201E1E"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Final Proje Ödevi"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:textColor="#D7D2D2"
+        android:layout_height="wrap_content"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/appdenCik"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        android:onClick="hesaptancik"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cikis"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/bar_layout_relaNotiv"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bar_layot_imgNot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notif">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/bar_layout_txtBildirimSayisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FCD7D2D2"
+            android:textSize="12sp"
+            android:textStyle="bold"></TextView>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

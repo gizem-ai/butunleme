@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "918117212961",
+    "project_id": "chat-bed4a",
+    "storage_bucket": "chat-bed4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918117212961:android:fd376425bbe9d61d05d460",
+        "android_client_info": {
+          "package_name": "com.example.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918117212961-t82doerh6dtkkmdabeop1earr6mn52ob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD21kBVrdxZps8j3UKG4mtq4Gr1b8T7mHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918117212961-t82doerh6dtkkmdabeop1earr6mn52ob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
